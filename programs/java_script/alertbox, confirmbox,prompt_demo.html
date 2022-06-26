@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title> </title>
+        <script>
+            function showalert(){
+                alert("do you really want to submit");
+            }
+            function confirm_demo(){ 
+               var r = confirm("do you really want to quit ")
+               if(r==true)
+               {
+                    document.write("you exited the game")
+               }
+               else{
+                   document.write("thats the spirit continue the game")
+               }
+            }
+            function prompt_demo(){
+                var name = prompt("enter your name", "prasanna")
+                if(name!=null && name!=""){
+                    document.write("entered name is:"+name)
+                }
+            }
+
+
+        </script>
+    <head>
+    <body>
+       <h1>Alert demo</h1>
+       <input type = "button" name = "b1" value = "submit" onclick="showalert()">
+       <h1>confirm_demo</h1>
+       <input type="button" name="c" value="quiz game" onclick="confirm_demo()">
+       <h1>Prompt box demo</h1>
+       <input type="button" onClick ="prompt_demo()" value="click here"/>
+    </body>
+</html>
